@@ -1,0 +1,273 @@
+
+.head{
+    background-color: black;
+    color: white;
+    padding: 180px 230px 222px;
+}
+
+.head1{
+    background:linear-gradient(white , blue ,black);
+    color: white;
+}
+
+.head3 , .project{
+    background-color:lavender;
+}
+
+.project a:hover{
+    background-color: #db2511;
+    color: white;
+}
+
+.head4{
+    background-color: #072442;
+}
+
+.head5{
+    background-color: black;
+    padding: 10px;
+}
+
+.intro{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.view{
+    border: 1px solid white;
+    color: white;
+	padding: 10px 10px;
+	text-decoration: none;
+	margin-right: 10px;
+    font-size: 20px;
+}
+
+.view:hover{
+    background-color:dodgerblue;
+ 	color: white;
+ 	transition: all 0.5s ease-in;
+}
+
+.submit{
+    border: 1px solid white;
+    background-color: #072442;
+    color: white;
+	padding: 10px 10px;
+	text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.submit:hover{
+    background-color: green;
+ 	color: white;
+ 	transition: all 0.5s ease-in;
+}
+
+.nav1 ul{
+    padding: 10px;
+}
+
+.nav1 ul li{
+    display: inline;
+    margin: 15px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.nav1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav1 ul li a:hover{
+    color: red;
+}
+
+.abt{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.line{
+    width: 90px;
+    border-width: 5px;
+    border-color: black;
+}
+
+.line1{
+    width: 140px;
+    border-width: 5px;
+    border-color: black;
+}
+
+.line2{
+    width: 120px;
+    border-width: 5px;
+    border-color: white;
+}
+
+.feature{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.featuredetail{
+    font-size: 16px;
+}
+
+.featuredetail1{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.name{
+    background-color: darkgray;
+    color: white;
+    padding: 20px;
+    float: left;
+    width: 500px;
+    font-size: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.active{
+    color: white;
+    background-color:red;
+    padding: 5px;
+}
+
+
+
+.contact{
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.contacttext{
+    color:aqua;
+    font-size: 20px;
+}
+
+.frm{
+    margin-bottom: 10px;
+}
+
+.social{
+    background-color: aliceblue;
+    padding: 15px;
+    background-color: #2b2d30;
+    color: white;
+}
+
+.name1{
+    font-size: 20px;
+}
+
+.img1{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    margin-left: 17px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #468cd6;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.img1:hover .overlay{
+    height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.viewbtn{
+    border: 1px solid white;
+    color: white;
+	padding: 10px 10px;
+	text-decoration: none;
+	margin-right: 10px;
+    font-size: 20px;
+    width: 80px;
+}
+
+
+.viewbtn:hover{
+    background-color:#285b91;
+ 	color: white;
+ 	transition: all 0.5s ease-in;
+}
+
+
+/*For preloader*/
+
+.loader-frame{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+}
+
+.loader1 , .loader2 {
+    position: absolute;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+
+.loader1{
+    width: 70px;
+    height: 70px;
+    border-top: 5px solid azure;
+    border-bottom: 5px solid azure;
+    animation: clockwisespin 2s linear 3;
+}
+
+.loader2{
+    width: 60px;
+    height: 60px;
+    border-left: 5px solid darkturquoise;
+    border-right: 5px solid darkturquoise;
+    top: 5px;left: 5px;
+    animation: anticlockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+@keyframes anticlockwisespin{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
