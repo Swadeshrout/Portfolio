@@ -10,7 +10,7 @@
     
     <body>
         
-          <div class="container-fluid navbar-inverse navbar-fixed-top head">
+        <div class="container-fluid navbar-inverse navbar-fixed-top head">
             <a href="#introduction" class="btn btn-primary navbar-btn navigation">HOME</a>
             <a href="#about" class="btn btn-primary navbar-btn navigation">ABOUT</a>
             <a href="#project" class="btn btn-primary navbar-btn navigation">PORTFOLIO</a>
@@ -223,49 +223,64 @@
                 <div class="col-sm-3 img1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
-                        <div class="text"><a href="" class="btn viewbtn">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
-                </div><!--col-4 ends here-->
+                </div><!--col-3 ends here-->
                 
                 <div class="col-sm-3 img1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
-                        <div class="text"><a href="" class="btn viewbtn">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
-                </div><!--col-4 ends here-->
+                </div><!--col-3 ends here-->
                 
                 <div class="col-sm-3 img1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
-                        <div class="text"><a href="" class="btn viewbtn">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
-                </div><!--col-4 ends here-->
+                </div><!--col-3 ends here-->
             </div><!--row ends here-->
+            
+            <div id="myimg" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <img src="dist/1.jpg" id="myImg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             
             <div class="row">
                 <div class="col-sm-3 img1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
-                        <div class="text"><a href="" class="btn viewbtn">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-4 ends here-->
                 
                 <div class="col-sm-3 img1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
-                        <div class="text"><a href="" class="btn viewbtn">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-4 ends here-->
                 
                 <div class="col-sm-3 img1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
-                        <div class="text"><a href="" class="btn viewbtn">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-4 ends here-->
             </div><!--row ends here-->
             <br><br><br>
-        </div>
+        </div>    
         
         
         <div class="container-fluid head4 text-center" id="contact">
@@ -388,5 +403,12 @@
                 }
               });
         </script>
+        <script>
+            function showimage(imagename){
+                /*alert(imagename);*/
+                /*document.getElementById("myImg").src = imagename;*/
+            }
+        </script>
+        
     </body>
 </html>
