@@ -1,13 +1,13 @@
 
 .head{
+    opacity: 0.8;
+}
+
+
+.head1{
     background-color: black;
     color: white;
     padding: 180px 230px 222px;
-}
-
-.head1{
-    background:linear-gradient(white , blue ,black);
-    color: white;
 }
 
 .head3 , .project{
