@@ -220,30 +220,30 @@
             <br><br>
             
             <div class="row form-group">
-                <div class="col-sm-3 img1">
-                    <img class="img-responsive" src="dist/1.jpg">
+                <div class="col-sm-3 img1" id="html">
+                    <img class="img-responsive" src="dist/rwd.JPG" style="height: 230px;">
                     <div class="overlay">
-                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/rwd.JPG')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-3 ends here-->
                 
-                <div class="col-sm-3 img1">
-                    <img class="img-responsive" src="dist/1.jpg">
+                <div class="col-sm-3 img1" id="html1">
+                    <img class="img-responsive" src="dist/trans.JPG" style="height: 230px;">
                     <div class="overlay">
-                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/trans.JPG')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-3 ends here-->
                 
-                <div class="col-sm-3 img1">
-                    <img class="img-responsive" src="dist/1.jpg">
+                <div class="col-sm-3 img1" id="boot">
+                    <img class="img-responsive" src="dist/home.JPG" style="height: 230px;">
                     <div class="overlay">
-                        <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
+                        <div class="text"><a href="" onclick="showimage('dist/home.JPG')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-3 ends here-->
             </div><!--row ends here-->
             
             <div id="myimg" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -258,21 +258,21 @@
             
             
             <div class="row">
-                <div class="col-sm-3 img1">
+                <div class="col-sm-3 img1" id="js">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
                         <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-4 ends here-->
                 
-                <div class="col-sm-3 img1">
+                <div class="col-sm-3 img1" id="jquery">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
                         <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
                     </div>
                 </div><!--col-4 ends here-->
                 
-                <div class="col-sm-3 img1">
+                <div class="col-sm-3 img1" id="jquery1">
                     <img class="img-responsive" src="dist/1.jpg">
                     <div class="overlay">
                         <div class="text"><a href="" onclick="showimage('dist/1.jpg')" class="btn viewbtn" data-toggle="modal" data-target="#myimg">View</a></div>
@@ -406,7 +406,7 @@
         <script>
             function showimage(imagename){
                 /*alert(imagename);*/
-                /*document.getElementById("myImg").src = imagename;*/
+                document.getElementById("myImg").src = imagename;
             }
         </script>
         
